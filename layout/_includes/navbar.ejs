@@ -1,0 +1,16 @@
+<!-- Nav -->
+<nav class="navbar navbar-fixed-top pisces-navbar JS_main_nav normal-mode <% if (index){ %>index<% }else{ %>post<% } %>">
+    <div class="container-fluid">
+        <!-- Logo  -->
+        <a class="navbar-brand" href="<%- config.url %>"><%- config.title%></a>
+        <!-- Links -->
+        <ul class="nav navbar-nav navbar-right">
+        <% for (var i in theme.menu){ %>
+            <li>
+                <a href="<%- theme.menu[i]%>"><%= __(i)%></a>
+            </li>
+        <% } %>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</nav>

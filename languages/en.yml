@@ -1,0 +1,18 @@
+categories:  CATEGORIES
+search: SEARCH
+home: HOME
+about: ABOUT
+portfolio: PORTFOLIO
+rss: RSS
+tags: TAGS
+tagcloud: TAG CLOUD
+prev: PREV
+next: NEXT
+newer: NEXT
+older: PREV
+comment: COMMENTS
+archive_a: ARCHIVES
+archive_b: "ARCHIVES: %s"
+page: "PAGE %d"
+recent_posts: RECENT POSTS
+excerpt_link: READ MORE

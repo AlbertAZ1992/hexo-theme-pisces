@@ -1,0 +1,87 @@
+.article-content {
+    width: @width-article-content;
+    margin: @margin-top-article-content auto;
+    padding: @padding-article-content;
+    // need media query above
+    background: @white-color;
+    position: relative;
+    z-index: 1;
+    .sans-serif;
+    .entry {
+        p {
+            font-weight: @font-weight-light;
+            font-size: @font-size-medium;
+            line-height: @line-height-medium;
+            a {
+                color: @sin-color;
+                padding: 0 @padding-content-a;
+                &:hover {
+                    color: @atlantis-color;
+                    text-shadow: 0 0 .3rem @black-trans-light-color;
+                }
+            }
+            img {
+                width: @width-full;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+.pisces-tags-cloud {
+    width: @width-article-content;
+    margin: 0 auto;
+    padding: @padding-article-content;
+    .tags-cloud {
+        width: @width-full;
+        padding: @padding-pre @padding-post-heading @padding-pre @padding-pre;
+        a {
+            margin: @margin-tag-a;
+            padding: @padding-content-a;
+            display: inline-block;
+            -webkit-border-radius: @large-border-radius;
+            -moz-border-radius: @large-border-radius;
+            -ms-border-radius: @large-border-radius;
+            -o-border-radius: @large-border-radius;
+            border-radius: @large-border-radius;
+            text-align: center;
+            font-size: @font-size-base;
+            background: @white-trans-light-color;
+            color: @black-color;
+        }
+        a.tag-color-1 {
+            border: 2px solid @tag-color-1;
+        }
+        a.tag-color-1:hover {
+            background: @tag-color-1;
+            color: @white-color;
+        }
+        a.tag-color-2 {
+            border: 2px solid @tag-color-2;
+        }
+        a.tag-color-2:hover {
+            background: @tag-color-2;
+            color: @white-color;
+        }
+        a.tag-color-3 {
+            border: 2px solid @tag-color-3;
+        }
+        a.tag-color-3:hover {
+            background: @tag-color-3;
+            color: @white-color;
+        }
+        a.tag-color-4 {
+            border: 2px solid @tag-color-4;
+        }
+        a.tag-color-4:hover {
+            background: @tag-color-4;
+            color: @white-color;
+        }
+        a.tag-color-5 {
+            border: 2px solid @tag-color-5;
+        }
+        a.tag-color-5:hover {
+            background: @tag-color-5;
+            color: @white-color;
+        }
+    }
+}

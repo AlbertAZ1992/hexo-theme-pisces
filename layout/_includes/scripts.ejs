@@ -1,0 +1,19 @@
+
+<!-- jQuery -->
+<!-- Bootstrap Js -->
+<!-- Pisces Js -->
+
+<script type="text/javascript">
+    var piscesConfig = {
+        navAlways: <%= theme.nav_always %>,
+        duoshuoEnable: <%= page.comments %> && '<%= theme.comment_provider %>' == "duoshuo" ? true : false,
+        baiduTongjiEnable: <%= theme.baidu_tongji %>
+    }
+    var duoshuoQuery = {short_name:'<%= theme.duoshuo.short_name %>'};
+</script>
+
+<script src="http://apps.bdimg.com/libs/require.js/2.1.9/require.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.require || document.write('<script src="/js/require-2.1.9.min.js">\x3C/script>')</script>
+<script>window.jQuery || document.write('<script src="/js/jquery-2.1.4.min.js">\x3C/script>')</script>
+<%- js(['js/pisces.js'])%>

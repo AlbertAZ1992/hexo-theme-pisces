@@ -1,0 +1,18 @@
+<header id="pisces_index_header" class="blog-background <% if(content == true){ %>banner-mask content-header<% } %>" <% if(theme.cover.enable){ %> style="background-image: url('<%- theme.cover.url %>')"<% } %>>
+    <div class="pisces-index-heading">
+        <% if(page.layout == 'tags' || page.tag){ %>
+        <h1><%- __('tags') %></h1>
+        <% }else if (page.layout=='categories' || page.category){ %>
+        <h1><%- __('categories') %></h1>
+        <% }else if (page.archive){ %>
+        <h1><%- __('archive_a') %></h1>
+        <% }else{ %>
+        <a href="<%- config.url %>">
+            <h1><%- config.title %></h1>
+        </a>
+        <h4><%- config.subtitle %></h4>
+        <% } %>
+    </div>
+</header>
+
+

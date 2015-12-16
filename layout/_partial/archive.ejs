@@ -1,0 +1,24 @@
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive){
+  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+  else title = __('archive_a');
+}
+%>
+<!-- Content -->
+<div class="container archive">
+    <div class="row">
+        <!-- Article list -->
+        <div class="pisces-article-list ">
+        <% if(page.posts){ %>
+        <% page.posts.sort('date',-1).each(function(item){ %>
+            <%- partial('_partial/article_item', {item: item,archive_content: true}) %>
+        <% }); %>
+        <% } %>
+        <!-- Pagination -->
+        <%- partial('_partial/pagination', {article: false}) %>
+        </div>
+    </div>
+</div>

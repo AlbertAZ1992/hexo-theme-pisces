@@ -1,0 +1,18 @@
+<div class="info-wrapper">
+    <% if (index){ %>
+    <h2 class="article-list-title"><a href="<% if(item.link){ %><%- item.link %><% }else{ %><%- config.root %><%- item.path %><% } %>"><%- item.title %></a></h2>
+    <% }else{ %>
+    <h2 class="article-title"><%- item.title %></h2>
+    <% } %>
+    <%
+    var dataStr = item.date.toDate().toUTCString().split(',')[1].split(' ');
+    dataStr.pop();
+    dataStr.pop();
+    %>
+    <div class="article-meta">
+        <span class="article-time" datetime="<%- dataStr.join(' ') %>"><%- dataStr.join(' ') %></span>
+        <%- partial('tags',{item: item,className: 'article-tags'}) %>
+    </div>
+</div>
+
+

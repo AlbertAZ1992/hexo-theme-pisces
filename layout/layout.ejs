@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- partial('_includes/head') %>
+<body>
+    <!-- Tags layout-->
+    <% if(page.layout == 'tags'){ %>
+        <%- partial('_includes/navbar',{index: false}) %>
+        <%- partial('_includes/index_header',{content: true}) %>
+        <!-- Content -->
+        <%- partial('_includes/tags')%>
+    <!-- Categories layout-->
+    <% }else if (page.layout=='categories'){ %>
+        <%- partial('_includes/navbar',{index: false}) %>
+        <%- partial('_includes/index_header',{content: true}) %>
+        <!-- Content -->
+        <!-- Content -->
+        <%- partial('_includes/categories')%>
+    <!-- Post layout-->
+    <% }else if (page.layout == 'post'){ %>
+        <%- partial('_includes/navbar',{index: false}) %>
+        <%- partial('_includes/post_header', {item: page}) %>
+        <!-- Content -->
+        <%- body %>
+    <!-- Archive && tag category detail layout -->
+    <% } else if(page.category!=null||page.tag!=null||page.archive!=null) { %>
+        <%- partial('_includes/navbar',{index: false}) %>
+        <%- partial('_includes/index_header',{content: true}) %>
+        <!-- Content -->
+        <%- body %>
+    <!-- Index layout -->
+    <% }else{ %>
+        <%- partial('_includes/navbar',{index: true}) %>
+        <%- partial('_includes/index_header',{content: false}) %>
+        <!-- Content -->
+        <%- body %>
+    <% } %>
+    <%- partial('_includes/footer') %>
+    <%- partial('_includes/scripts') %>
+</body>
+</html>

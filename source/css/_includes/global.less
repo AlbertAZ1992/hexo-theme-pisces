@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    transition:  all 0.3s ease-out;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    .serif;
+    margin: 0;
+    font-size: @font-size-base;
+    color: @gray-color;
+    background-color: @white-color;
+    background: url(../img/p5.png) repeat;
+}
+
+article {
+    overflow-x : hidden;
+}
+
+ul,
+ol,
+dl {
+    line-height: @line-height-base;
+}
+
+a {
+    text-decoration: none;
+    transition:  all 0.3s ease-out;
+    outline: none;
+    &:hover,
+    &:active {
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &:link,
+    &:visited {
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    .sans-serif;
+    font-weight: @font-weight-bold;
+}
+h1 { font-size: @font-size-h1;}
+h2 { font-size: @font-size-h2;}
+h3 { font-size: @font-size-h3;}
+h4 { font-size: @font-size-h4;}
+h5 { font-size: @font-size-h5;}
+h6 { font-size: @font-size-h6;}
+blockquote {
+    margin: 0 0 @margin-base;
+    padding: @padding-bq;
+    font-style: italic;
+    font-size: @font-size-small;
+    color: @gray-color;
+    border-left: 5px solid @gray-light-color;
+    p {
+        margin: 0;
+    }
+}
+
+pre {
+    border: none;
+    background: none;
+}

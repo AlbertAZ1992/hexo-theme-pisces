@@ -1,0 +1,16 @@
+<div class="pisces-tags-cloud" >
+    <% if(theme.tags_comment){ %>
+    <blockquote class="tags-comments">
+        标签命名规范：
+        <% for(var i in theme.tags_comment){ %>
+        <li><%= theme.tags_comment[i] %></li>
+        <% } %>
+    </blockquote>
+    <% } %>
+    <div id="JS_tag_cloud" class="tags-cloud">
+    <% site.tags.sort('name').each(function(item){ %>
+        <a href="<%- config.root %><%- item.path %>" title="<%= item.name %>" data-num="<%= item.posts.length %>"><%= item.name %></a>
+    <% }); %>
+    </div>
+</div>
+<%- partial('_partial/comment',{item: page}) %>

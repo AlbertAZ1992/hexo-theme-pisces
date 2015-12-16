@@ -1,0 +1,36 @@
+<% if( archive_content == true){ %>
+    <article class="pisces-article-item txt">
+        <header>
+            <%- partial('_partial/_post/title',{item: item, index:true}) %>
+        </header>
+        <hr>
+    </article>
+<% }else{ %>
+    <% if(item.photos && item.photos.length){ %>
+    <article class="pisces-article-item photo">
+        <section>
+        <a href="<% if(item.link){ %><%- item.link %><% }else{ %><%- config.root %><%- item.path %><% } %>" target="_blank">
+            <img src="<%- item.photos[0] %>" alt="cover">
+        </a>
+        <%- partial('_partial/_post/title',{item: item, index:true}) %>
+        </section>
+    </article>
+    <% } else { %>
+    <article class="pisces-article-item txt">
+        <header>
+            <%- partial('_partial/_post/title',{item: item, index:true}) %>
+        </header>
+        <section class="article-excerpt">
+            <% if(item.excerpt){%>
+                <%- item.excerpt %>
+            <% }else{ %>
+                <%- strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 200) %>
+            <% }%>
+        </section>
+        <footer>
+            <div class="article-readmore"><a href="<% if(item.link){ %><%- item.link %><% }else{ %><%- config.root %><%- item.path %><% } %>" title="点击阅读全文">阅读全文 »</a></div>
+        </footer>
+    </article>
+    <% } %>
+<% } %>
+

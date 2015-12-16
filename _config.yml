@@ -1,0 +1,38 @@
+# header menu
+menu:
+  home: /
+  rss:
+  about: /about
+  tags: /tags
+  categories: /categories
+# index cover url
+cover:
+    enable: true
+    url: /img/home-bg0.jpg
+
+# tags comments
+tags_comment:
+  l1: 行业观察、职位、公司优先使用中文
+  l2: 外国产品、术语优先使用英文
+# categories comments
+categories_comment:
+
+# Baidu Tongji
+baidu_tongji: true
+
+# Duoshuo comment
+comment_provider: duoshuo
+duoshuo:
+  short_name: deacyn
+
+# nav always fixed
+nav_always: true
+
+# favicon url
+favicon:
+
+# social links
+social:
+  github:
+  weibo:
+  twitter:

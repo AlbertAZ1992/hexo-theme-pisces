@@ -1,0 +1,12 @@
+<header id="pisces_post_header" class="post-background banner-mask" style="background-image: url('<% if(item.photos && item.photos.length){ %><%- item.photos[0] %><% } else{ %><%- theme.cover.url %><% } %>')">
+    <div class="pisces-post-heading">
+        <h1><%- item.title %></h1>
+        <%
+        var dataStr = item.date.toDate().toUTCString().split(',')[1].split(' ');
+        dataStr.pop();
+        dataStr.pop();
+        %>
+        <span class="article-time" datetime="<%- dataStr.join(' ') %>"><%- dataStr.join(' ') %><span class="article-author">Albert</span></span>
+        <%- partial('_partial/_post/tags',{item: item,className: 'article-tags'})%>
+    </div>
+</header>

@@ -1,0 +1,25 @@
+<!-- Body -->
+<nav class="header-nav container">
+<% for (var i in theme.menu){ %>
+    <% if( i != 'home' ){ %>
+        <a href="<%- theme.menu[i] %>"><%= __(i)%></a>
+    <% } %>
+<% } %>
+</nav>
+
+<!-- Content -->
+<div class="container">
+    <div class="row">
+        <!-- Article list -->
+        <div class="pisces-article-list ">
+        <% if(page.posts){ %>
+        <% page.posts.sort('date',-1).each(function(item){ %>
+            <%- partial('_partial/article_item', {item: item,archive_content: false}) %>
+        <% }); %>
+        <% } %>
+
+        <!-- Pagination -->
+        <%- partial('_partial/pagination', {article: false}) %>
+        </div>
+    </div>
+</div>

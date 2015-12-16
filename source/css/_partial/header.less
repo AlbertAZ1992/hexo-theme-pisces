@@ -1,0 +1,88 @@
+// Header
+#pisces_index_header {
+    height: @height-index-header;
+    position: relative;
+    z-index: 0;
+    .pisces-index-heading {
+        padding: @padding-index-heading 0;
+        color: @black-color;
+        text-align: center;
+        a {
+            color: @black-color;
+        }
+    }
+}
+#pisces_index_header.content-header {
+    height: @height-index-content-header
+}
+.blog-background,
+.post-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pisces_post_header {
+    height: @height-post-header;
+    position: relative;
+    z-index: 0;
+    .pisces-post-heading {
+        width: @width-post-heading;
+        margin: 0 auto;
+        padding: @padding-post-heading;
+        color: @white-color;
+            h1 {
+                font-weight: @font-weight-normal;
+            }
+            .article-time {
+                .sans-serif;
+                color: @white-color;
+                font-size: @font-size-base;
+                font-weight: @font-weight-light;
+                display: block;
+                padding: @padding-article-info 0 @padding-article-info/2 @padding-article-info/8;
+                .article-author {
+                    margin-left: @margin-left-article-tags;
+                }
+            }
+            .article-tags {
+                display: block;
+                a{
+                    display: inline-block;
+                    margin-right: @margin-left-article-tags;
+                    padding: 0 @padding-article-tags;
+                    .sans-serif;
+                    font-size: @font-size-base;
+                    line-height: @line-height-base;
+                    font-weight: @font-weight-exlight;
+                    color: @white-color;
+                    background: @white-trans-light-color;
+                    -webkit-border-radius: @small-border-radius;
+                    -moz-border-radius: @small-border-radius;
+                    -ms-border-radius: @small-border-radius;
+                    -o-border-radius: @small-border-radius;
+                    border-radius: @small-border-radius;
+                    &:hover {
+                        background: @white-trans-dark-color;
+                    }
+                }
+            }
+    }
+}
+.banner-mask:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .2;
+    background-color: @black-trans-deep-color;
+}
+
+

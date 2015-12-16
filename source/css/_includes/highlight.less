@@ -1,0 +1,121 @@
+.article-content {
+    .entry {
+        p > code,
+        pre {
+            overflow: auto;
+            border: none;
+            -webkit-border-radius: @border-dot-size;
+            -moz-border-radius: @border-dot-size;
+            -ms-border-radius: @border-dot-size;
+            -o-border-radius: @border-dot-size;
+            border-radius: @border-dot-size;
+            font-size: @font-size-base;
+            .serif;
+            text-align: left;
+            direction: ltr;
+            white-space: pre;
+            word-spacing: normal;
+            word-wrap: normal;
+            -moz-tab-size: 4;
+            -ms-tab-size: 4;
+            tab-size: 4;
+        }
+        p > code {
+            height: @height-full;
+            padding: 0 @padding-code;
+            background-color: @pisces-trans-color;
+            color: @sea-color;
+        }
+        pre {
+            margin: 0 @margin-base;
+            padding: @padding-pre;
+            background-color: @black-code-color;
+            code {
+                color: @onahau-color;
+                .serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: antialiased;
+
+            }
+            .comment,
+            .template_comment,
+            .diff .heade,r
+            .doctype,
+            .pi,
+            .lisp .string,
+            .javadoc {
+                font-style: italic;
+                color: @white-color;
+            }
+            .keyword,
+            .winutils,
+            .method,
+            .addition,
+            .css .tag,
+            .request,
+            .status,
+            .nginx .title {
+                color: @malibu-color;
+            }
+            .number,
+            .command,
+            .string,
+            .tag .value,
+            .phpdoc,
+            .tex .formula,
+            .regexp,
+            .hexcolor {
+                color: @violet-color;
+            }
+            .title,
+            .localvars,
+            .chunk,
+            .decorator,
+            .built_in,
+            .identifier,
+            .vhdl,
+            .literal,
+            .id {
+                color: @gossip-color;
+            }
+            .attribute,
+            .variable,
+            .lisp .body,
+            .smalltalk .number,
+            .constant,
+            .class .title,
+            .parent,
+            .haskell .type {
+                color: @lightning-color;
+            }
+            .preprocessor,
+            .preprocessor .keyword,
+            .shebang,
+            .symbol,
+            .symbol .string,
+            .diff .change,
+            .special,
+            .attr_selector,
+            .important,
+            .subst,
+            .cdata,
+            .clojure .title {
+                color: @white-color;
+            }
+        }
+        table{
+            border-spacing: 0;
+        }
+        .gutter {
+            color: @gray-color;
+            text-align: right;
+            pre {
+                padding: 0;
+                margin: 0;
+                background: transparent;
+            }
+        }
+
+    }
+
+}

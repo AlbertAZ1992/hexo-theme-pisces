@@ -1,0 +1,8 @@
+<% if (item.tags && item.tags.length){ %>
+    <span class="<% if(className!= undefined){ %><%-className%><% }else{ %>tags<% } %>">
+    <% item.tags.each(function(tag){ %>
+        <a class="tag" href="<%- config.root %><%- tag.path %>"><%- tag.name %></a>
+    <% }); %>
+    </span>
+<% } %>
+
