@@ -6,14 +6,15 @@ A chic Hexo theme. Written with Less and ejs.
 
 [demo site](http://deacyn.com)
 
-Index page - cover, with social site links integrated:
-![]()
+Index page:
+![](http://7xp53l.com1.z0.glb.clouddn.com/ying_mu_kuai_zhao_2015-12-16_xia_wu_8.59.16.png)
+![](http://7xp53l.com1.z0.glb.clouddn.com/ying_mu_kuai_zhao_2015-12-16_xia_wu_9.11.13.png)
 
-Index page - blog:
-![]()
+Post page:
+![](http://7xp53l.com1.z0.glb.clouddn.com/ying_mu_kuai_zhao_2015-12-16_xia_wu_9.02.55.png)
 
-Post page, with pagination, share module and comment module integrated:
-![]()
+Tag page:
+![](http://7xp53l.com1.z0.glb.clouddn.com/ying_mu_kuai_zhao_2015-12-16_xia_wu_9.03.32.png)
 
 
 ## Features
