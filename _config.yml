@@ -12,8 +12,8 @@ cover:
 
 # tags comments
 tags_comment:
-  l1: 行业观察、职位、公司优先使用中文
-  l2: 外国产品、术语优先使用英文
+  l: 中文名称
+  l: 英文术语
 # categories comments
 categories_comment:
 

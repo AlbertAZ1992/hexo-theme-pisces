@@ -34,7 +34,7 @@ Tag page:
 
 	```
 	cd your-hexo-folder
-	git clone https://github.com/Deacyn/hexo-theme-pisces.git themes/pisces
+	git clone z themes/pisces
 	```
 - Install [hexo-renderer-less](https://github.com/hexojs/hexo-renderer-less.git)
 
