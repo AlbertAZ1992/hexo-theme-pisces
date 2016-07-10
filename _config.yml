@@ -1,7 +1,6 @@
 # header menu
 menu:
   home: /
-  rss:
   about: /about
   tags: /tags
   categories: /categories
